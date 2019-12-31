@@ -1,49 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body, html {
+  background-color: skyblue;
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#Experience {background-color: green;}
+#Projects {background-color: blue;}
+#Contact {background-color: orange;}
+
+    </style>
 <title>Chris Korabik's Website</title>
 <meta charset="UTF-8">
-<meta name="description" content="This page is the professional website of Chris Korabik.">.
+<meta name="description" content="This page is the professional website of Chris Korabik.">
 <meta name="author" content="Chris Korabik">
 </head>
 <body>
-<center>
-<h1>About me</h1>
-<p>Hey everyone. Thanks for visiting my personal website.\n
-    
-    If you want to learn about my running career, click <a href="running.html">here</a>.
+<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Experience', this, 'green')">Experience</button>
+<button class="tablink" onclick="openPage('Projects', this, 'blue')">Projects</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
 
-    <br>
-    Here is a list of the last few books that I have read.
-    <table>
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-        </tr>
-        <tr>
-            <td><i>Infinite Jest</i></td>
-            <td>David Foster Wallace</td>
-        </tr>
-        <tr>
-            <td><i>A Hobbit, a Wardrobe, and a Great War</i></td>
-            <td>Joseph Loconte</td>
-        </tr>
-        <tr>
-            <td><i>The Lord of the Rings: The Return of the King</i></td>
-            <td>J.R.R. Tolkien</td>
-        </tr>
-        <tr>
-            <td><i>The Lord of the Rings: The Two Towers</i></td>
-            <td>J.R.R. Tolkien</td>
-        </tr>
-        <tr>
-            <td><i>The Lord of the Rings: The Fellowship of the Ring</i></td>
-            <td>J.R.R. Tolkien</td>
-        </tr>
+<div id="Home" class="tabcontent">
+    <center>
+        <h1>Chris Korabik</h1>
+        <img src="CK.jpg" alt="Chris K" style="width:180px;height:256px;">
+        <p>Hey everyone. Thanks for visiting my personal website. This is my <a href="Chris_Korabik_Resume_12-19.pdf">resume</a>.
+            <br>
 
-    </table>
+            If you want to learn about my running career, click <a href="running.html">here</a>.
+            <br>
+            <br>
+            Here is a list of the last few books that I have read:
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                </tr>
+                <tr>
+                    <td><i>Infinite Jest</i></td>
+                    <td>David Foster Wallace</td>
+                </tr>
+                <tr>
+                    <td><i>A Hobbit, a Wardrobe, and a Great War</i></td>
+                    <td>Joseph Loconte</td>
+                </tr>
+                <tr>
+                    <td><i>The Lord of the Rings: The Return of the King</i></td>
+                    <td>J.R.R. Tolkien</td>
+                </tr>
+                <tr>
+                    <td><i>The Lord of the Rings: The Two Towers</i></td>
+                    <td>J.R.R. Tolkien</td>
+                </tr>
+                <tr>
+                    <td><i>The Lord of the Rings: The Fellowship of the Ring</i></td>
+                    <td>J.R.R. Tolkien</td>
+                </tr>
+            </table>
+            
+        </p>
+        </center>
+  </div>
+  <div id="Experience" class="tabcontent">
+    <h3>Past</h3>
+    <p>Some Experience this fine day!</p>
+  </div>
+  
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+
+  <div id="Projects" class="tabcontent">
+    <h3>Projects</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+  
+
+  <script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
     
-</p>
-</center>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
