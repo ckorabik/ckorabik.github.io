@@ -3,20 +3,49 @@
 <head>
     <style>
         body {
-            background-color: skyblue;
+            background-color: gray;
+            color: white;
         }
+ .tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
     </style>
 <title>Chris Korabik's Running Career</title>
 <meta charset="UTF-8">
-<meta name="description" content="This page is the professional website of Chris Korabik.">.
+<meta name="description" content="This page is the professional website of Chris Korabik.">
 <meta name="author" content="Chris Korabik">
 </head>
 <body>
+    <button class="tablink" onclick="javascript:GoToHomePage()" href="javascript:void(0)">Home</button>
+<br>
+<br>
 <center>
 <h1>Cross Country/Track & Field</h1>
-<p>I have been a competitive runner since 2010. I ran track and cross country all through high school, college, and even a season in grad school. 
-    I have had a lot of fun with it in the past, and I still run pretty frequently in my spare time. If anyone is curious, here are my best times 
-    from college:
+<p>I have been a competitive runner since 2010. I ran track and cross country all through high school, college, <br>
+    and even a season in grad school. I have had a lot of fun with it in the past, and I still run frequently <br>
+    in my spare time. My life goal is to run a mile in under 4 minutes some day.  Frankly, I haven't come very <br>
+    close to that yet, but you have to have dreams that you can work for! If anyone is curious (or if you are <br>
+    thinking about challenging me to a race), here are my best times from college:
 <br>
 <br>
         <a href="https://xc.tfrrs.org/athletes/4982174.html"> DePaul Cross Country </a>
@@ -27,6 +56,27 @@
     
 <br>
 <br>
+Because I enjoy reading about running and because I like to make tables in HTML, here are my favorite books about running:
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+    </tr>
+    <tr>
+        <td><i>Once a Runner</i></td>
+        <td>John L. Parker, Jr.</td>
+    </tr>
+    <tr>
+        <td><i>Born to Run</i></td>
+        <td>Christopher McDougall</td>
+    </tr>
+    <tr>
+        <td><i>Running with the Buffaloes&nbsp;&nbsp;</i></td>
+        <td>Chris Lear</td>
+    </tr>
+</table>
+<br>
+<br>
 <a href = "https://depaulbluedemons.com/sports/track-and-field">
     <img src="DePaul.png" alt="DePaul Blue Demons" style="width:600px;height:400px;">
 </a>
@@ -34,6 +84,20 @@
     <img src="GT.png" alt="Georgia Tech Yellow Jackets" style="width:600px;height:400px;">
 </a>
 </p>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </center>
+<script>   
+function GoToHomePage()
+    {
+      window.location = 'index.html';   
+    }
+  </script>
+
 </body>
 </html>

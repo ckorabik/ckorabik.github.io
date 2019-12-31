@@ -3,7 +3,7 @@
 <head>
     <style>
         body, html {
-  background-color: skyblue;
+  background-color: gray;
   height: 100%;
   margin: 0;
   font-family: Arial;
@@ -34,10 +34,50 @@
   height: 100%;
 }
 
-#Home {background-color: red;}
-#Experience {background-color: green;}
-#Projects {background-color: blue;}
-#Contact {background-color: orange;}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+ul{
+  display:inline-block;
+  text-align:left;
+  list-style-position: inside;
+}
+
+#Home {background-color: gray;}
+#Experience {background-color: gray;}
+#Projects {background-color: gray;}
+#Contact {background-color: gray;}
 
     </style>
 <title>Chris Korabik's Website</title>
@@ -55,20 +95,37 @@
     <center>
         <h1>Chris Korabik</h1>
         <img src="CK.jpg" alt="Chris K" style="width:180px;height:256px;">
-        <p>Hey everyone. Thanks for visiting my personal website. This is my <a href="Chris_Korabik_Resume_12-19.pdf">resume</a>.
+        <p>Hey everyone. Thanks for visiting my personal website. My hope is that whoever visits this <br>
+            site will get a better idea of who I am as a person. For those interested, here is my <a href="Chris_Korabik_Resume_12_19.pdf">resume</a>.
             <br>
+            <br>
+            I am currently an automation engineer in the quality assurance group at United Technologies <br>
+            Corporation in Atlanta, GA. In December of 2019 I graduated from the Georgia Institute of Technology <br>
+            with my M.S. in Mechanical Engineering. My focus at Georgia Tech was in robotics and control. I also <br>
+            have a B.S. in Physics from DePaul University with a minor in Mathematics. I am interested in all <br>
+            areas of robotics (primarily controls and software engineering). I also really enjoy learning <br>
+            about new topics in physics and math. My current position at UTC has sparked my interest in test <br>
+            automation using Python and the Gherkin language with Behavior-Driven-Development.
 
-            If you want to learn about my running career, click <a href="running.html">here</a>.
+            <ul> These are my main hobbies at this point in time:
+                <li><a href="running.html">Running</a></li>
+                <li>Learning guitar</li>
+                <li>Reading</li>
+                <li>Playing board games</li>
+                <li>Gardening (this is a newer development)</li>
+                <li>Watching Chicago White Sox games</li>
+                <li>Watching DePaul basketball games</li>
+            </ul>
             <br>
             <br>
-            Here is a list of the last few books that I have read:
+            Here are the last few books that I have read (* denotes that I am still reading it):
             <table>
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
                 </tr>
                 <tr>
-                    <td><i>Infinite Jest</i></td>
+                    <td><i>*Infinite Jest</i></td>
                     <td>David Foster Wallace</td>
                 </tr>
                 <tr>
@@ -84,11 +141,18 @@
                     <td>J.R.R. Tolkien</td>
                 </tr>
                 <tr>
-                    <td><i>The Lord of the Rings: The Fellowship of the Ring</i></td>
+                    <td><i>The Lord of the Rings: The Fellowship of the Ring &nbsp;&nbsp;</i></td>
                     <td>J.R.R. Tolkien</td>
                 </tr>
             </table>
-            
+            <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
         </p>
         </center>
   </div>
@@ -99,7 +163,25 @@
   
   <div id="Contact" class="tabcontent">
     <h3>Contact</h3>
-    <p>Who we are and what we do.</p>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+      
+          <label for="lname">Email Address</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your email address...">
+      
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
   </div>
 
   <div id="Projects" class="tabcontent">
