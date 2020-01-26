@@ -9,6 +9,12 @@
   font-family: Arial;
 }
 
+P.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em
+}
+
 /* Style tab links */
 .tablink {
   background-color: #555;
@@ -96,34 +102,33 @@ h3{
 </head>
 <body>
 <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('Experience', this, 'green')">Experience</button>
+<button class="tablink" onclick="openPage('Experience', this, 'green')">Work Experience</button>
 <button class="tablink" onclick="openPage('Projects', this, 'blue')">Projects</button>
 <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
 
 <div id="Home" class="tabcontent">
-    <center>
-        <h1>Chris Korabik</h1>
-        <img src="CK.jpg" alt="Chris K" style="width:180px;height:256px;">
-        <p>Hey everyone. Thanks for visiting my personal website. My hope is that whoever visits this <br>
+        <center><h1>Chris Korabik</h1>
+        <img src="CK.jpg" alt="Chris K" style="width:180px;height:256px;"></center>
+        <P class="blocktext">Hey everyone. Thanks for visiting my personal website. My hope is that whoever visits this 
             site will get a better idea of who I am as a person. For those interested, here is my <a href="Chris_Korabik_Resume_12_19.pdf">resume</a>.
             <br>
             <br>
-            I am currently an automation engineer in the quality assurance group at United Technologies <br>
-            Corporation in Atlanta, GA. In December of 2019 I graduated from the Georgia Institute of Technology <br>
-            with my M.S. in Mechanical Engineering. My focus at Georgia Tech was in robotics and control. I also <br>
-            have a B.S. in Physics from DePaul University with a minor in Mathematics. I am interested in all <br>
-            areas of robotics (primarily controls and software engineering). I also really enjoy learning <br>
-            about new topics in physics and math. My current position at UTC has sparked my interest in test <br>
+            I am currently an automation engineer in the quality assurance group at United Technologies 
+            Corporation in Atlanta, GA. In December of 2019 I graduated from the Georgia Institute of Technology 
+            with my M.S. in Mechanical Engineering. My focus at Georgia Tech was in robotics and control. I also 
+            have a B.S. in Physics from DePaul University with a minor in Mathematics. I am interested in all 
+            areas of robotics (primarily controls and software engineering). I also really enjoy learning 
+            about new topics in physics and math. My current position at UTC has sparked my interest in test 
             automation using Python and the Gherkin language with Behavior-Driven-Development.
-
+<center>
             <ul> These are my main hobbies at this point in time:
                 <li><a href="running.html">Running</a></li>
                 <li>Learning guitar</li>
                 <li>Reading</li>
                 <li>Playing board games</li>
                 <li>Gardening (this is a newer development)</li>
-                <li>Watching Chicago White Sox games</li>
-                <li>Watching DePaul basketball games</li>
+                <li>Watching <a href=https://www.mlb.com/whitesox>Chicago White Sox</a> games</li>
+                <li>Watching <a href=https://depaulbluedemons.com/sports/mens-basketball>DePaul basketball</a> games</li>
             </ul>
             <br>
             <br>
@@ -155,6 +160,7 @@ h3{
                 </tr>
             </table>
             <br>
+            </center>
     <br>
     <br>
     <br>
@@ -162,8 +168,7 @@ h3{
     <br>
     <br>
     <br>
-        </p>
-        </center>
+          </P>
   </div>
   <div id="Experience" class="tabcontent">
     <h2>Current Role</h2>
@@ -203,7 +208,6 @@ h3{
   <li>Lifeguard at the Riverside Golf Club</li>
   <li>Caddy at the Riverside Golf Club</li>
 </ul>
-
   </div>
   
   <div id="Contact" class="tabcontent">
@@ -212,7 +216,7 @@ h3{
         <form action="action_page.php">
       
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name...">
+          <input type="text" id="fname" name="firstname" placeholder="Your first name...">
       
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name...">
@@ -230,13 +234,13 @@ h3{
   </div>
 
   <div id="Projects" class="tabcontent">
-    <ul> <h3>Past Projects</h3>
-      <li>Woodcut Settlers of Catan game made from scratch on AutoCAD</li>
-      <li>Attitude and positional control of a quadcopter using an LQR controller</li>
-      <li>Bridge crane setup employing tracking control and IR sensors</li>
-      <li>Modular furniture design for inexpensive/temporary living</li>
-      <li>Obstacle-avoidance robot using ultrasonic sensors</li>
-      <li>Stress Measurements in Thin Films Using the Picosecond Ultrasonic Method</li>
+    <ul><h3>Past Projects</h3>
+      <li>Woodcut Settlers of Catan game made from scratch on AutoCAD: <a href = "361.mp4">Photo</a></li>
+      <li>Attitude and positional control of a quadcopter using an LQR controller: <a href = "361.mp4">Report</a>, <a href = "361.mp4">Video</a></li>
+      <li>Bridge crane setup employing tracking control and IR sensors: <a href = "361.mp4">Website</a></li>
+      <li>Modular furniture design for inexpensive/temporary living: <a href = "Team 7 Final Presentation.ppt">PowerPoint</a></li>
+      <li>Obstacle-avoidance robot using ultrasonic sensors: <a href = "361.mp4">Video</a>, <a href = "Chris Korabik Nahom Solomon Auto Sonar Car.pdf">Poster</a></li>
+      <li>Stress Measurements in Thin Films Using the Picosecond Ultrasonic Method: <a href = "361.mp4">Report</a>, <a href = "361.mp4">PowerPoint</a></li>
     </ul>
   </div>
   
