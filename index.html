@@ -92,7 +92,7 @@ h3{
 #Home {background-color: gray;}
 #Experience {background-color: gray;}
 #Projects {background-color: gray;}
-#Contact {background-color: gray;}
+#About_Me {background-color: gray;}
 
     </style>
 <title>Chris Korabik's Website</title>
@@ -104,13 +104,14 @@ h3{
 <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
 <button class="tablink" onclick="openPage('Experience', this, 'green')">Work Experience</button>
 <button class="tablink" onclick="openPage('Projects', this, 'blue')">Projects</button>
-<button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+<button class="tablink" onclick="openPage('About Me', this, 'orange')">About Me</button>
 
 <div id="Home" class="tabcontent">
         <center><h1>Chris Korabik</h1>
         <img src="CK.jpg" alt="Chris K" style="width:180px;height:256px;"></center>
         <P class="blocktext">Hey everyone. Thanks for visiting my personal website. My hope is that whoever visits this 
-            site will get a better idea of who I am as a person. For those interested, here is my <a href="Chris_Korabik_Resume_1_20.pdf">resume</a>.
+            site will get a better idea of who I am as a person. For those interested, here is my <a href="Chris_Korabik_Resume_1_20.pdf">resume</a> and here is my 
+            <a href="https://www.linkedin.com/in/christopher-korabik-9b818b111/">LinkedIn</a>.
             <br>
             <br>
             I am currently an automation engineer in the quality assurance group at United Technologies 
@@ -120,47 +121,7 @@ h3{
             areas of robotics (primarily controls and software engineering). I also really enjoy learning 
             about new topics in physics and math. My current position at UTC has sparked my interest in test 
             automation using Python and the Gherkin language with Behavior-Driven-Development.
-<center>
-            <ul> These are my main hobbies at this point in time:
-                <li><a href="running.html">Running</a></li>
-                <li>Learning guitar</li>
-                <li>Reading</li>
-                <li>Playing board games</li>
-                <li>Gardening (this is a newer development)</li>
-                <li>Watching <a href=https://www.mlb.com/whitesox>Chicago White Sox</a> games</li>
-                <li>Watching <a href=https://depaulbluedemons.com/sports/mens-basketball>DePaul basketball</a> games</li>
-            </ul>
-            <br>
-            <br>
-            Here are the last few books that I have read (* denotes that I am still reading it):
-            <table>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                </tr>
-                <tr>
-                    <td><i>*Infinite Jest</i></td>
-                    <td>David Foster Wallace</td>
-                </tr>
-                <tr>
-                    <td><i>A Hobbit, a Wardrobe, and a Great War</i></td>
-                    <td>Joseph Loconte</td>
-                </tr>
-                <tr>
-                    <td><i>The Lord of the Rings: The Return of the King</i></td>
-                    <td>J.R.R. Tolkien</td>
-                </tr>
-                <tr>
-                    <td><i>The Lord of the Rings: The Two Towers</i></td>
-                    <td>J.R.R. Tolkien</td>
-                </tr>
-                <tr>
-                    <td><i>The Lord of the Rings: The Fellowship of the Ring &nbsp;&nbsp;</i></td>
-                    <td>J.R.R. Tolkien</td>
-                </tr>
-            </table>
-            <br>
-            </center>
+
     <br>
     <br>
     <br>
@@ -171,7 +132,7 @@ h3{
           </P>
   </div>
   <div id="Experience" class="tabcontent">
-    <h2>Current Role</h2>
+     <h2>Current Role</h2>
     <ul> <h3>QA Automation Engineer for United Technologies Corporation (Since September 2019)</h3>
       <li>Writes Python and Gherkin code to automate testing of the company’s data science software</li>
       <li>Participates in company meetings to understand user requirements and help reach technical solutions
@@ -210,37 +171,67 @@ h3{
 </ul>
   </div>
   
-  <div id="Contact" class="tabcontent">
-    <h3>Contact</h3>
-    <div class="container">
-        <form action="action_page.php" method="post">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-      
-          <label for="lname">Email Address</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your email address...">
-      
-          <label for="subject">Message</label>
-          <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
+  <div id="About Me" class="tabcontent">
+    <center><h2>About Me</h2></center>
+    <P class="blocktext"></P>
+
+    <p><center>
+    
+      <ul> In no particular order, here are a bunch of things that I like doing:
+        <li>Eating pizza (mostly Chicago Deep Dish)</li>
+          <li><a href="running.html">Running</a></li>
+          <li>Learning guitar</li>
+          <li>Reading</li>
+          <li>Playing board games</li>
+          <li>Gardening (this is a newer development)</li>
+          <li>Bowling (also a newer development)</li>
+          <li>Watching <a href=https://www.mlb.com/whitesox>Chicago White Sox</a> games</li>
+          <li>Watching <a href=https://depaulbluedemons.com/sports/mens-basketball>DePaul basketball</a> games</li>
+      </ul>
+      <br>
+      <br>
+      Here are the last few books that I have read (* denotes that I am still reading it):
+      <table>
+          <tr>
+              <th>Title</th>
+              <th>Author</th>
+          </tr>
+          <tr>
+              <td><i>*Infinite Jest</i></td>
+              <td>David Foster Wallace</td>
+          </tr>
+          <tr>
+              <td><i>A Hobbit, a Wardrobe, and a Great War</i></td>
+              <td>Joseph Loconte</td>
+          </tr>
+          <tr>
+              <td><i>The Lord of the Rings: The Return of the King</i></td>
+              <td>J.R.R. Tolkien</td>
+          </tr>
+          <tr>
+              <td><i>The Lord of the Rings: The Two Towers</i></td>
+              <td>J.R.R. Tolkien</td>
+          </tr>
+          <tr>
+              <td><i>The Lord of the Rings: The Fellowship of the Ring &nbsp;&nbsp;</i></td>
+              <td>J.R.R. Tolkien</td>
+          </tr>
+      </table>
+      <br>
+      </center></p>
   </div>
 
   <div id="Projects" class="tabcontent">
-    <ul><h3>Past Projects</h3>
+    <center>
+    <ul><h2>Past University Projects</h2>
       <li>Attitude and positional control of a quadcopter using an LQR controller: <a href = "ME6404_Final_Report.pdf">Report</a>, <a href = "large.mov">Video</a></li>
       <li>Bridge crane setup employing tracking control and IR sensors: <a href = "https://ckorabik3.wixsite.com/website">Website</a></li>
       <li>Modular furniture design for inexpensive/temporary living: <a href = "Team 7 Final Presentation.pdf">PowerPoint</a></li>
       <li>Obstacle-avoidance robot using ultrasonic sensors: <a href = "361.mp4">Video</a>, <a href = "Chris Korabik Nahom Solomon Auto Sonar Car.pdf">Poster</a></li>
       <li>Stress Measurements in Thin Films Using the Picosecond Ultrasonic Method: <a href = "KorabikFinalPaper.pdf">Report</a>, <a href = "KorabikFinalPresentation.pdf">PowerPoint</a></li>
     </ul>
+  
+  </center>
   </div>
   
 
